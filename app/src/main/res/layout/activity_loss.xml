@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    tools:ignore="LockedOrientationActivity">
+
+    <TextView
+        android:id="@+id/ScoreLoss"
+        android:layout_width="310dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/your_score_was"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/NewGameLoss"
+        android:layout_width="270dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/new_game"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/LeaderboardLoss"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/LeaderboardLoss"
+        android:layout_width="270dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/leaderboard"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/MainMenuLoss"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NewGameLoss" />
+
+    <Button
+        android:id="@+id/MainMenuLoss"
+        android:layout_width="270dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/main_menu"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LeaderboardLoss"
+        app:layout_constraintVertical_bias="0.51" />
+</androidx.constraintlayout.widget.ConstraintLayout>
